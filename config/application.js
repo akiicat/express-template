@@ -1,7 +1,7 @@
 let express = require('express'),
   app = express(),
   routes = require('./routes'),
-  logger = require('./logger'),
+  logger = require('./logs/logger'),
   bodyParser = require('body-parser'); // res.body required
 
 app.use(logger);

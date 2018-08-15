@@ -8,4 +8,11 @@ module.exports = {
   database_host: ['localhost'],
   database_port: 9042,
   database_keyspace: 'ecg',
+
+  google: {
+    tracer: {
+      projectId: 'sunlit-inquiry-164609',
+      keyFilename: `${env.root}/config/stackdriver.staging.json`,
+    },
+  },
 };
